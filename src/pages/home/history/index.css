@@ -1,0 +1,11 @@
+.historybox {
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    width: 20rem;
+    background-color: lightgray;
+}
+
+.historycontainer {
+    width: 27rem;
+    margin: 0 auto;
+}
