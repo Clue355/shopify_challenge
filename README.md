@@ -2,23 +2,22 @@
 
 # AI Prompt Sender
 
-This project sends a prompt to openAI and displays information sent back
+This project allows you to ask an AI anything and recieve a response. The AI that is used for this application is
+text-curie-001 from [Open AI](https://beta.openai.com/).
 
 ## Features
 
 -   Mobile Compatible
--   Send an AI a prompt
--
+-   Send an AI a prompt and recieve a response
+-   accessibility
 
 ## Tech Stack
 
-**Client:** React, Redux, TailwindCSS
-
-**Server:** Node, Express
+**Client:** React
 
 ## Demo
 
-Insert gif or link to demo
+[Live Link Here!](https://ai-prompt-sender.netlify.app/)
 
 ## Run Locally
 
