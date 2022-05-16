@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a1edbdfe-96a7-42a0-8e2b-1d1f5ca596a7/deploy-status)](https://app.netlify.com/sites/ai-prompt-sender/deploys)
+
 # AI Prompt Sender
 
 This project sends a prompt to openAI and displays information sent back
