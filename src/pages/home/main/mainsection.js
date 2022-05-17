@@ -35,7 +35,7 @@ function MainSection(props) {
                 <form>
                     <input
                         type="text"
-                        placeholder="Tell the AI what to do or ask a question"
+                        placeholder="tell the AI what to do or ask a question"
                         name="prompt"
                         value={props.formData}
                         onChange={handleChange}
