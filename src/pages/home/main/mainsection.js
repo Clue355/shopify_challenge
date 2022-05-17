@@ -6,7 +6,12 @@ function MainSection(props) {
         props.setFormData(event.target.value);
     }
 
+    function handleClear() {
+        props.setHistory([]);
+    }
+
     async function handleFetch(event) {
+        props.setIsLoading((prevState) => !prevState);
         event.preventDefault();
         const fetchLink = "https://api.openai.com/v1/engines/text-curie-001/completions";
         const configObj = {
@@ -19,6 +24,7 @@ function MainSection(props) {
         };
 
         let data = await fetchData(fetchLink, configObj);
+        props.setIsLoading((prevState) => !prevState);
         props.setHistory([{ prompt: props.formData, response: data.choices[0].text }, ...props.history]);
     }
 
@@ -29,12 +35,13 @@ function MainSection(props) {
                 <form>
                     <input
                         type="text"
-                        placeholder="Enter Your Prompt"
+                        placeholder="Tell the AI what to do or ask a question"
                         name="prompt"
                         value={props.formData}
                         onChange={handleChange}
                     ></input>
                     <button onClick={handleFetch}>Send</button>
+                    <button onClick={handleClear}>Clear</button>
                 </form>
             </div>
         </section>
