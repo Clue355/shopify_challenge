@@ -17,7 +17,7 @@ text-curie-001 from [Open AI](https://beta.openai.com/).
 
 **Client:** React
 
-**Backend:** [Open AI](https://beta.openai.com/)
+**API:** [Open AI](https://beta.openai.com/)
 
 ## Demo
 
