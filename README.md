@@ -9,11 +9,15 @@ text-curie-001 from [Open AI](https://beta.openai.com/).
 
 -   Mobile Compatible
 -   Send an AI a prompt and recieve a response
--   accessibility
+-   Accessibility
+-   Share on twitter button
+-   Clear responses button
 
 ## Tech Stack
 
 **Client:** React
+
+**Backend:** [Open AI](https://beta.openai.com/)
 
 ## Demo
 

@@ -33,7 +33,7 @@ function characterReducer(prompt, response) {
     newResponse = response.slice(0, charLength - (newPrompt.length + infoCharLength) - 4) + "...";
 
     if (prompt === "") {
-        newResponse = response.slice(0, charLength - infoCharLength + 1) + "...";
+        newResponse = response.slice(0, charLength - infoCharLength - 5) + "...";
         return `AI: ${newResponse} ${createdBy}`;
     }
     return `Me: ${newPrompt} AI: ${newResponse} ${createdBy}`;
