@@ -1,6 +1,6 @@
 import gif from "../../assets/animations/fastermediumblock.gif";
 
-function Loading(props) {
+function Loading() {
     return (
         <div>
             <img src={gif} alt="Loading" />

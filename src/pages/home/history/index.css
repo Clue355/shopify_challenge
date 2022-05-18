@@ -1,3 +1,7 @@
+p {
+    margin: 0.5rem 0 0.5rem 0;
+}
+
 .historybox {
     margin-bottom: 0.5rem;
     padding: 1rem;
@@ -16,4 +20,17 @@
     width: 1rem;
     margin: 0.5rem auto;
     height: 2rem;
+}
+
+.twitterShareBox {
+    width: 10rem;
+}
+
+.shareText {
+    float: left;
+    margin-top: 0.5rem;
+}
+
+.promptText {
+    clear: both;
 }
