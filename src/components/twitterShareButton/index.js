@@ -30,13 +30,13 @@ function characterReducer(prompt, response) {
     } else if (prompt === "") {
         newPrompt = "";
     }
-    newResponse = response.slice(0, charLength - (newPrompt.length + infoCharLength) - 4) + "...";
+    newResponse = response.slice(0, charLength - (newPrompt.length + infoCharLength) - 11) + "...";
 
     if (prompt === "") {
         newResponse = response.slice(0, charLength - infoCharLength - 5) + "...";
         return `AI: ${newResponse} ${createdBy}`;
     }
-    return `Me: ${newPrompt} AI: ${newResponse} ${createdBy}`;
+    return `Me: ${newPrompt} AI: ${newResponse}${createdBy}`;
 }
 
 export default ShareTwitter;
