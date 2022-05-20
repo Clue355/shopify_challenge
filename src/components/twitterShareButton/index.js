@@ -28,7 +28,7 @@ function characterReducer(prompt, response) {
         newPrompt = prompt.slice(0, hunChar) + "...";
     }
 
-    newResponse = response.replaceAll(/[.]+/g, ", ").slice(0, charLength - newPrompt.length - dotChar) + "...";
+    newResponse = response.replaceAll(/[.]+/g, ",").slice(0, charLength - newPrompt.length - dotChar) + "...";
 
     if (prompt === "") {
         return `AI: ${newResponse}`;
