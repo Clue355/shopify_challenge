@@ -29,10 +29,10 @@ function characterReducer(prompt, response) {
         newPrompt = prompt.slice(0, halfCharLength - 4) + "...";
     }
 
-    newResponse = response.slice(0, charLength - (newPrompt.length + infoCharLength) - 3) + "...";
+    newResponse = response.slice(0, charLength - (newPrompt.length + infoCharLength) - 7) + "...";
 
     if (prompt === "") {
-        return `AI: ${newResponse} ${createdBy}`;
+        return `AI: ${newResponse}${createdBy}`;
     }
     return `Me: ${newPrompt} AI: ${newResponse}${createdBy}`;
 }
