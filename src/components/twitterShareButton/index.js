@@ -22,7 +22,7 @@ function characterReducer(prompt, response) {
     let newPrompt = prompt;
     const charLength = 280;
     const hunChar = 100;
-    const dotChar = 3;
+    const dotChar = 5;
 
     if (newPrompt.length >= hunChar) {
         newPrompt = prompt.slice(0, hunChar) + "...";
