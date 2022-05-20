@@ -25,15 +25,13 @@ function characterReducer(prompt, response) {
     const charLength = 280;
     const halfCharLength = 140;
 
-    if (newPrompt + infoCharLength >= charLength || newPrompt + infoCharLength >= halfCharLength) {
-        newPrompt = prompt.slice(0, halfCharLength - (infoCharLength / 2 + 1));
-    } else if (prompt === "") {
-        newPrompt = "";
+    if (newPrompt + infoCharLength >= halfCharLength) {
+        newPrompt = prompt.slice(0, halfCharLength - 4) + "...";
     }
-    newResponse = response.slice(0, charLength - (newPrompt.length + infoCharLength) - 11) + "...";
+
+    newResponse = response.slice(0, charLength - (newPrompt.length + infoCharLength) - 3) + "...";
 
     if (prompt === "") {
-        newResponse = response.slice(0, charLength - infoCharLength - 5) + "...";
         return `AI: ${newResponse} ${createdBy}`;
     }
     return `Me: ${newPrompt} AI: ${newResponse}${createdBy}`;
