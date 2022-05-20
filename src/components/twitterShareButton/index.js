@@ -20,21 +20,21 @@ function ShareTwitter(props) {
 function characterReducer(prompt, response) {
     let newResponse = response;
     let newPrompt = prompt;
-    const createdBy = "web app created by @clue355";
-    const infoCharLength = createdBy.length;
     const charLength = 280;
-    const halfCharLength = 140;
+    const hunChar = 100;
+    const dotChar = 3;
 
-    if (newPrompt + infoCharLength >= halfCharLength) {
-        newPrompt = prompt.slice(0, halfCharLength - 4) + "...";
+    if (newPrompt.length >= hunChar) {
+        newPrompt = prompt.slice(0, hunChar) + "...";
     }
 
-    newResponse = response.slice(0, charLength - (newPrompt.length + infoCharLength) - 7) + "...";
+    newResponse = response.replaceAll(/[.]+/g, ", ").slice(0, charLength - newPrompt.length - dotChar) + "...";
 
     if (prompt === "") {
-        return `AI: ${newResponse}${createdBy}`;
+        return `AI: ${newResponse}`;
     }
-    return `Me: ${newPrompt} AI: ${newResponse}${createdBy}`;
+    console.log(`Me: ${newPrompt} AI: ${newResponse}`);
+    return `Me: ${newPrompt} AI: ${newResponse}`;
 }
 
 export default ShareTwitter;
