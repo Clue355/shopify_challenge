@@ -33,7 +33,6 @@ function characterReducer(prompt, response) {
     if (prompt === "") {
         return `AI: ${newResponse}`;
     }
-    console.log(`Me: ${newPrompt} AI: ${newResponse}`);
     return `Me: ${newPrompt} AI: ${newResponse}`;
 }
 
