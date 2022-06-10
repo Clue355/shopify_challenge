@@ -6,9 +6,17 @@ p {
     margin-bottom: 0.5rem;
     padding: 1rem;
     width: 20rem;
-    border: 1px solid rgb(0, 0, 0);
-    background-color: rgb(241, 239, 239);
+    border: 1px solid rgb(255 255 255);
+    background-color: transparent;
     border-radius: 3px;
+    color: white;
+}
+
+.noHistoryBox {
+    margin: 0 auto;
+    width: 10rem;
+    color: white;
+    text-align: center;
 }
 
 .historycontainer {

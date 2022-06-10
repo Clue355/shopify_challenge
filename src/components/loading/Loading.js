@@ -1,4 +1,4 @@
-import gif from "../../assets/animations/fastermediumblock.gif";
+import gif from "../../assets/animations/transparentsmolblock.gif";
 
 function Loading() {
     return (

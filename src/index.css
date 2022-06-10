@@ -4,6 +4,14 @@ body {
         "Droid Sans", "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./assets/images/mountain.jpg");
+    background-size: cover;
+}
+
+@media (max-width: 1200px) {
+    body {
+        background-size: 100rem;
+    }
 }
 
 body::-webkit-scrollbar {
