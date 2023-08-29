@@ -1,5 +1,3 @@
-### not currently deployed
-
 # AI Prompt Sender
 
 This project allows you to ask an AI anything and recieve a response. The AI that is used for this application is
@@ -21,7 +19,7 @@ text-curie-001 from [Open AI](https://beta.openai.com/).
 
 ## Demo
 
-[Live Link Here!](https://ai-prompt-sender.netlify.app/)
+### not currently deployed
 
 ## Run Locally
 
